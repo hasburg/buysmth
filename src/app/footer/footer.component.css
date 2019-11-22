@@ -25,8 +25,85 @@ a {
  .round1 {
   margin-top: 109px;
   margin-right: 33px;
+  transform: rotate(171.1deg);
 }
 .round2 {
   margin-top: 128px;
   margin-left: 41px;
+}
+.mainInform {
+  display: flex;
+  justify-content: space-between;
+}
+.information {
+  display: flex;
+  padding-top: 83px;
+  margin: 0 auto;
+  flex-direction: column;
+}
+.information .contactInfo {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 30px;
+  color: #232323;
+}
+.information .imgBlock {
+  display: flex;
+  flex-direction: column;
+}
+.information .comSoon {
+  font-family: Neucha;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 15px;
+  text-align: center;
+  color: #A9A9A9;
+  margin-left: 48px;
+}
+.appStr {
+  margin-top: 5px;
+  margin-left: 55px;
+}
+.imgGoogle {
+  margin-top: 8px;
+  width: 180px;
+  height: 81px;
+}
+.blockInfo {
+  margin: 15px 0;
+}
+
+.citiesImg {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.blockCont {
+  display: flex;
+}
+.round3 {
+  margin-right: 13px;
+  transform: rotate(171.39deg);
+}
+footer {
+  text-align: center;
+  width: 100%;
+  bottom: 19px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 30px;
+}
+.footerLink {
+  padding-left: 155px;
+
+}
+.footerLink2 {
+  padding-left: 356px;
+  padding-right: 167px;
+
 }
