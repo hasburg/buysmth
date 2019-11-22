@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ScrollerComponent implements OnInit {
 
+  imageCount=1;
   constructor() { }
 
   ngOnInit() {
