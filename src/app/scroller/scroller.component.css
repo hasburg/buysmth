@@ -8,6 +8,8 @@
     background-repeat: no-repeat;
     width:25%;
     background-size: contain;
+    z-index: 1000;
+
 }
 
 .textDescription {
@@ -24,4 +26,16 @@
 }
 .imagePhone{
     padding-top: 3%;
+}
+.backgroudImageRight{
+  position: absolute;
+  left: 47%;
+  top: 88%;
+
+  z-index: 10;
+}
+.backgroudImageLeft{
+  position: absolute;
+  left: 13%;
+  top: 78%;
 }
