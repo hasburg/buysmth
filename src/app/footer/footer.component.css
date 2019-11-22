@@ -1,0 +1,32 @@
+a {
+  color: #232324;
+  text-decoration: none;
+}
+.kontact {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+.kontact .header {
+  display: flex;
+  padding-top: 129px;
+  margin: 0;
+  text-align: center;
+  font-family: Neucha;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 60px;
+  line-height: 66px;
+  color: #060606;
+}
+ .round1 {
+  margin-top: 109px;
+  margin-right: 33px;
+}
+.round2 {
+  margin-top: 128px;
+  margin-left: 41px;
+}
