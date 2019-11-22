@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.aboutUsText {
+    background-image: url("../../assets/slider/buble.png");
+    background-repeat: no-repeat;
+    width:25%;
+    background-size: contain;
+}
+
+.textDescription {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 30px;
+    text-align: center;
+    color: #232323;
+    margin-top: 18%;
+    width: 80%;
+    margin-left: 10%;
+}
+.imagePhone{
+    padding-top: 3%;
+}
