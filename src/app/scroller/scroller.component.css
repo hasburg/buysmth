@@ -19,14 +19,14 @@
   line-height: 33px;
   text-align: center;
   color: #232323;
-  padding-top: 2%;
-  padding-right: 70%;
+  padding-top: 8%;
+  padding-right: 25%;
   padding-left: 6%;
   display: -webkit-box;
   -webkit-line-clamp: 7;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  height: 60%
+  height: 60%;
 }
 .imagePhone{
     padding-top: 3%;

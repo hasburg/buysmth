@@ -34,8 +34,5 @@ export class AppComponent {
     });
 
   }
-  ngOnInit(): void {
-    this.lang.lang;
 
-  }
 }
