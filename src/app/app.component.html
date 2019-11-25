@@ -1,12 +1,12 @@
 <div class="body">
   <div class="header">
     <div class="headerBlock">
-      <a class="headerText">
+      <a (click)="scrollToComponent(aboutUS)" class="headerText">
         <div>
           About us
         </div>
       </a>
-      <a class="headerText">
+      <a class="headerText" (click)="scrollToComponent(faq)">
         <div>
           FAQ
         </div>
@@ -17,14 +17,20 @@
       <img src="../assets//logo.png">
     </a>
     <div class="headerBlock">
-      <a class="headerText">
+      <a class="headerText" (click)="scrollToComponent(footer)">
         <div>
           {{source.contacts}}
         </div>
       </a>
       <a class="headerText">
-        <div>
-          RU
+        <div class="dropdown">
+          <span>ENG</span>
+          <div class="dropdown-content">
+            <p>ENG</p>
+            <p>RU</p>
+            <p>UA</p>
+            <p>ESP</p>
+          </div>
         </div>
       </a>
     </div>
@@ -32,7 +38,7 @@
   <div>
     <div class="textSlog">
       <span>
-        Buy smth
+        Buysmth
       </span>
       <span>
         {{source.title}}
@@ -40,11 +46,18 @@
     </div>
 
   </div>
-  <app-scroller>
+  <div #aboutUS>
+      <app-scroller >
 
-  </app-scroller>
-  <app-faq>
-  </app-faq>
+        </app-scroller>
+  </div>
+<div #faq>
+    <app-faq>
+      </app-faq>
+</div>
 
-  <app-footer></app-footer>
+<div #footer>
+    <app-footer></app-footer>
+</div>
+
 </div>

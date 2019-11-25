@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { LangService } from './lang.service';
-import {ru} from '../environments/lang/ru.js';
-import {ua} from '../environments/lang/ua.js';
-import {eng} from '../environments/lang/eng.js';
-import {esp} from '../environments/lang/esp.js';
+import { ru } from '../environments/lang/ru.js';
+import { ua } from '../environments/lang/ua.js';
+import { eng } from '../environments/lang/eng.js';
+import { esp } from '../environments/lang/esp.js';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -33,6 +33,9 @@ export class AppComponent {
       }
     });
 
+  }
+  scrollToComponent(element) {
+    element.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 
 }

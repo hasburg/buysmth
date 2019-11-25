@@ -20,10 +20,10 @@
   text-align: center;
   color: #232323;
   padding-top: 8%;
-  padding-right: 25%;
-  padding-left: 6%;
+  padding-right: 46%;
+  padding-left: 8%;
   display: -webkit-box;
-  -webkit-line-clamp: 7;
+  -webkit-line-clamp: 6;
   -webkit-box-orient: vertical;
   overflow: hidden;
   height: 60%;
@@ -39,11 +39,11 @@
 }
 .backgroudImageLeft{
   display: flex;
-  margin-left: 10%;
 }
 .rightBackgound{
   background-image: url("../../assets/right_backround.png");
   background-repeat: no-repeat;
   background-size: contain;
   z-index: 1000;
+  background-position-y: bottom;
 }
