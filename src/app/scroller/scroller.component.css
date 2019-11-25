@@ -3,36 +3,47 @@
 .aboutUsText {
     background-image: url("../../assets/slider/buble.png");
     background-repeat: no-repeat;
-    width:25%;
     background-size: contain;
     z-index: 1000;
+    height: 50%;
+    display: flex;
+    background-position: 4%
 
 }
 
 .textDescription {
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 19px;
-    line-height: 30px;
-    text-align: center;
-    color: #232323;
-    margin-top: 18%;
-    width: 80%;
-    margin-left: 10%;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 33px;
+  text-align: center;
+  color: #232323;
+  padding-top: 2%;
+  padding-right: 70%;
+  padding-left: 6%;
+  display: -webkit-box;
+  -webkit-line-clamp: 7;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  height: 60%
 }
 .imagePhone{
     padding-top: 3%;
 }
 .backgroudImageRight{
-  position: absolute;
+  position: relative;
   left: 47%;
   top: 88%;
-
   z-index: 10;
 }
 .backgroudImageLeft{
-  position: absolute;
-  left: 13%;
-  top: 78%;
+  display: flex;
+  margin-left: 10%;
+}
+.rightBackgound{
+  background-image: url("../../assets/right_backround.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 1000;
 }
