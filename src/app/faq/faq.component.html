@@ -4,34 +4,26 @@
   </div>
   <div class="faqContainer">
     <div class="faqElement">
-      <img class="faqImg" src="../../assets/plus.png" alt="show more">
-      <div class="faqTextParag">
-        Как ничего не забыть и не купить лишнего?
+
+      <div class="column">
+        <div class="more">
+          <img (click)="toogle= !toogle" *ngIf="toogle" class="faqImg" src="../../assets/plus.png" alt="show more">
+          <img (click)="toogle= !toogle" *ngIf="!toogle" class="faqImg" src="../../assets/minus.png" alt="show less">
+
+          <div class="faqTextParag">
+            Как ничего не забыть и не купить лишнего?
+          </div>
+        </div>
+        <br>
+        <span [ngClass]="{'colapsed': !toggle}">
+          Планируйте свои покупки заранее. Пользуясь Buy smth вы можете планировать не только что купить, но и
+          сколько. А гибкая встроенная система расчета сделает это проще. Хотите купить 440г орехов при цене 74гр за
+          100г? Не нужно больше считат. Удобный интерфейс проведет все расчеты всего в несколько кликов. Теперь будет
+          просто подготовить нужную сумму к оплате.
+        </span>
       </div>
-    </div>
-    <div class="faqElement">
-      <img class="faqImg" src="../../assets/plus.png" alt="show more">
-      <div class="faqTextParag">
-        Как ничего не забыть и не купить лишнего?
-      </div>
-    </div>
-    <div class="faqElement">
-      <img class="faqImg" src="../../assets/plus.png" alt="show more">
-      <div class="faqTextParag">
-        Как ничего не забыть и не купить лишнего?
-      </div>
-    </div>
-    <div class="faqElement">
-      <img class="faqImg" src="../../assets/plus.png" alt="show more">
-      <div class="faqTextParag">
-        Как ничего не забыть и не купить лишнего?
-      </div>
-    </div>
-    <div class="faqElement">
-      <img class="faqImg" src="../../assets/plus.png" alt="show more">
-      <div class="faqTextParag">
-        Как ничего не забыть и не купить лишнего?
-      </div>
+
+
     </div>
   </div>
 

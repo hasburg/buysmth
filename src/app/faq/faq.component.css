@@ -21,6 +21,7 @@
 }
 
 .faqTextParag {
+  display: flex;
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -28,7 +29,22 @@
   line-height: 30px;
   color: #232323;
   padding-left: 4rem;
+  align-items: center;
 }
 .faqImg{
+
   padding-left: 25px
+}
+.more{
+  display: flex;
+  align-items: center;
+}
+.section {
+  overflow:hidden;
+  transition:max-height 0.3s ease-out;
+  height:auto;
+  max-height:600px;
+}
+.section.collapsed {
+  max-height:0;
 }
