@@ -1,26 +1,33 @@
 <div class="container column">
-  <div class="textSlog">
-    FAQ
+  <div class="kontact">
+    <img src="./../../assets/images/Group_1.png" alt="" class="round1">
+    <div class="textSlog">
+      FAQ
+    </div>
+    <img src="./../../assets/images/Group_1.png" alt="" class="round2">
   </div>
+
   <div class="faqContainer">
     <div class="faqElement">
 
       <div class="column">
         <div class="more">
-          <img  class="faqImg" src="../../assets/plus.png" alt="show more">
-          <img  class="faqImg" src="../../assets/minus.png" alt="show less">
-
+          <img (click)="toogle= !toogle" *ngIf="toogle" class="faqImg" src="../../assets/plus.png" alt="show more">
+          <img (click)="toogle= !toogle" *ngIf="!toogle" class="faqImg" src="../../assets/minus.png" alt="show less">
           <div class="faqTextParag">
             Как ничего не забыть и не купить лишнего?
           </div>
         </div>
         <br>
-        <span >
-          Планируйте свои покупки заранее. Пользуясь Buy smth вы можете планировать не только что купить, но и
-          сколько. А гибкая встроенная система расчета сделает это проще. Хотите купить 440г орехов при цене 74гр за
-          100г? Не нужно больше считат. Удобный интерфейс проведет все расчеты всего в несколько кликов. Теперь будет
-          просто подготовить нужную сумму к оплате.
-        </span>
+        <div class="section" [ngClass]="{'collapsed': toogle,'expand': !toogle}">
+          <p>
+            Планируйте свои покупки заранее. Пользуясь Buy smth вы можете планировать не только что купить, но и
+            сколько. А гибкая встроенная система расчета сделает это проще. Хотите купить 440г орехов при цене 74гр за
+            100г? Не нужно больше считат. Удобный интерфейс проведет все расчеты всего в несколько кликов. Теперь будет
+            просто подготовить нужную сумму к оплате.
+          </p>
+        </div>
+
       </div>
 
 

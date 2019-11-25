@@ -13,8 +13,24 @@ body{
   align-items: center;
   font-size: 50px;
   line-height: 55px;
-  margin-top: 80px;
+  margin-top: 135px;
 }
 html{
   background-color: #fffcf1;
+}
+.round1 {
+  margin-top: 109px;
+  margin-right: 33px;
+  transform: rotate(171.1deg);
+}
+.round2 {
+  margin-top: 128px;
+  margin-left: 41px;
+}
+.kontact {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
 }

@@ -22,15 +22,7 @@ a {
   line-height: 66px;
   color: #060606;
 }
- .round1 {
-  margin-top: 109px;
-  margin-right: 33px;
-  transform: rotate(171.1deg);
-}
-.round2 {
-  margin-top: 128px;
-  margin-left: 41px;
-}
+
 .mainInform {
   display: flex;
   justify-content: space-between;
