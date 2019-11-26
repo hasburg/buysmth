@@ -1,4 +1,4 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, HAMMER_GESTURE_CONFIG } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -7,6 +7,7 @@ import { ScrollerComponent } from './scroller/scroller.component';
 import { FaqComponent } from './faq/faq.component';
 import { FooterComponent } from './footer/footer.component';
 import { PhoneComponent } from './phone/phone.component';
+import {MyHammerConfig} from './my-hammer.config';
 
 @NgModule({
    declarations: [
@@ -20,7 +21,12 @@ import { PhoneComponent } from './phone/phone.component';
       BrowserModule,
       AppRoutingModule
    ],
-   providers: [],
+   providers: [
+    {
+      provide: HAMMER_GESTURE_CONFIG,
+      useClass: MyHammerConfig
+    }
+   ],
    bootstrap: [
       AppComponent
    ]

@@ -23,8 +23,7 @@ export const eng = {
         "Running out of milk or paper? Put them on the list right away so that you don’t forget to buy them:)"
     },
     {
-      about:
-        "Draw up a lot of shopping lists. Manage multiple storages. Calculate the price and quantity of goods to buy. A simple and customizable interface will make all this easier for you and allow you to free up your time for other important things.Enjoy your shopping! ...",
+      about:"Draw up a lot of shopping lists. Manage multiple storages. Calculate the price and quantity of goods to buy. A simple and customizable interface will make all this easier for you and allow you to free up your time for other important things.Enjoy your shopping! ...",
       title: "Everything is simple and convenient.",
       description:
         "The completeness and customization of information will help you focus only on the important."

@@ -1,15 +1,17 @@
-<div class="phone">
-  <img class="backgroundImg" src="../../assets//phone/frame_1.png" alt="">
+<div (swipeleft)="next(1)"
+(swiperight)="next(-1)" class="phone">
+  <img class="backgroundImg" src="../../assets//phone/frame_{{position}}.png" alt="">
   <div class="frameContainer">
-    <p class="frameTitle">
-      frame_title
+    <p *ngIf="source.about[position-1].title" class="frameTitle">
+      {{source.about[position-1].title}}
     </p>
-    <p class="frameDescription">
-      frame_description
+    <p *ngIf="source.about[position-1].description" class="frameDescription">
+        {{source.about[position-1].description}}
     </p>
-    <div class="buttonContainer">
-      <img class="button" src="../../assets/phone/button_left.png" alt="">
-      <img class="button" src="../../assets/phone/button_right.png" alt="">
-    </div>
+
   </div>
+  <div class="buttonContainer">
+      <img [ngClass]="{'notDispaly': position===1}" (click)="next(-1)"class="button" src="../../assets/phone/button_left.png" alt="">
+      <img [ngClass]="{'notDispaly': position===4}"(click)="next(1)" class="button"src="../../assets/phone/button_right.png" alt="">
+    </div>
 </div>

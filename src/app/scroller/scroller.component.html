@@ -1,13 +1,12 @@
 <div class="container">
   <div class="backgroudImageLeft">
       <img  src="../../assets//left_backgroun.png" alt="">
-<app-phone></app-phone>
+<app-phone #position></app-phone>
   </div>
-
   <div class="rightBackgound">
       <div class="aboutUsText">
           <p class="textDescription">
-            {{source.about[0]}}
+            {{source.about[position.position - 1].about}}
           </p>
         </div>
   </div>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { LangService } from '../lang.service';
 import { ru } from '../../environments/lang/ru.js';
 import { ua } from '../../environments/lang/ua.js';
@@ -10,8 +10,10 @@ import { esp } from '../../environments/lang/esp.js';
   styleUrls: ['./scroller.component.css']
 })
 export class ScrollerComponent implements OnInit {
+  @ViewChild('position', { static: true }) phone;
   lang = new LangService();
   source;
+  pos;
   constructor() {
     this.lang.lang.subscribe(res => {
       switch (res) {
@@ -34,6 +36,7 @@ export class ScrollerComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.pos = this.phone.position;
   }
 
 }
