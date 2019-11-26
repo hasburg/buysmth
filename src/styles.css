@@ -4,7 +4,7 @@ body {
 
 .container {
   display: flex;
-  justify-content: center;
+  justify-content: start;
 }
 
 .textSlog {
@@ -14,7 +14,7 @@ body {
   align-items: center;
   font-size: 50px;
   line-height: 55px;
-  margin-top: 135px;
+
 }
 
 html {
@@ -22,13 +22,12 @@ html {
 }
 
 .round1 {
-  margin-top: 109px;
   margin-right: 33px;
   transform: rotate(171.1deg);
 }
 
 .round2 {
-  margin-top: 128px;
+
   margin-left: 41px;
 }
 
@@ -38,6 +37,8 @@ html {
   justify-content: center;
   flex-direction: row;
   align-items: center;
+  margin-bottom: 25px;
+
 }
 
 html,

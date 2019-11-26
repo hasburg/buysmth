@@ -4,19 +4,20 @@ import { ru } from '../../environments/lang/ru.js';
 import { ua } from '../../environments/lang/ua.js';
 import { eng } from '../../environments/lang/eng.js';
 import { esp } from '../../environments/lang/esp.js';
-
+import { PositionService } from '../position.service';
 @Component({
   selector: 'app-phone',
   templateUrl: './phone.component.html',
   styleUrls: ['./phone.component.css']
 })
 export class PhoneComponent implements OnInit {
-  @Output('position') position = 1;
-
+  positionService;
+  currentPosition;
   language;
   source;
-  constructor(lang : LangService) {
-    this.language=lang;
+  constructor(lang: LangService,
+    position: PositionService) {
+    this.language = lang;
     lang.lang.subscribe(res => {
       switch (res) {
         case 'ru':
@@ -35,11 +36,16 @@ export class PhoneComponent implements OnInit {
           break;
       }
     });
+    this.positionService = position;
+    position.position.subscribe(res => {
+      this.currentPosition = res;
+    });
   }
   next(i) {
-    const check = this.position + i;
+    const check = this.currentPosition + i;
     if (check >= 1 && check <= 4) {
-      this.position += i;
+      this.positionService.updatePosition(check);
+
     }
 
   }

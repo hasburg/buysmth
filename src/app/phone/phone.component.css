@@ -1,39 +1,44 @@
 .frameTitle {
-  font-family: Neucha;
+  font-family: 'Neucha', cursive;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
-  line-height: 24px;
-  margin: 0;
+  line-height: 20px;
   text-align: center;
-  height: 48px;
   color: #FFFFFF;
+  width: 16rem;
+  padding-top: 10px;
+  padding-left: 32px;
 }
 
 .frameDescription {
   font-family: Open Sans;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 21px;
+  font-size: 11px;
+  line-height: 13px;
   text-align: center;
   color: #FFFFFF;
+  width: 12rem;
+  margin: auto;
   opacity: 0.84;
-  width: 243px;
-  height: 84px;
 }
 
 .frameContainer {
   position: relative;
-  top: -150px;
+  top: -225px;
 }
 
 .backgroundImg {
-  height: 487px;
+  height: 648px;
+  width: 328px;
+
 }
 
+
 .button {
-  width: 20%;
+  width: 60px;
+  height: 60px;
 }
 
 .notDispaly {
@@ -42,7 +47,8 @@
 
 .buttonContainer {
   position: relative;
-  top: -214px;
+  top: -250px;
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }

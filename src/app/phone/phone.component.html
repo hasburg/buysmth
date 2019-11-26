@@ -1,17 +1,20 @@
 <div (swipeleft)="next(1)"
-(swiperight)="next(-1)" class="phone">
-  <img class="backgroundImg" src="../../assets//phone/frame_{{position}}.png" alt="">
+(swiperight)="next(-1)" >
+<div class="phone">
+    <img class="backgroundImg" src="../../assets/frama_{{currentPosition}}.svg" alt="">
+</div>
+
   <div class="frameContainer">
-    <p *ngIf="source.about[position-1].title" class="frameTitle">
-      {{source.about[position-1].title}}
+    <p *ngIf="source.about[currentPosition-1].title" class="frameTitle">
+      {{source.about[currentPosition-1].title}}
     </p>
-    <p *ngIf="source.about[position-1].description" class="frameDescription">
-        {{source.about[position-1].description}}
+    <p *ngIf="source.about[currentPosition-1].description" class="frameDescription">
+        {{source.about[currentPosition-1].description}}
     </p>
 
   </div>
   <div class="buttonContainer">
-      <img [ngClass]="{'notDispaly': position===1}" (click)="next(-1)"class="button" src="../../assets/phone/button_left.png" alt="">
-      <img [ngClass]="{'notDispaly': position===4}"(click)="next(1)" class="button"src="../../assets/phone/button_right.png" alt="">
+      <div [ngClass]="{'notDispaly': currentPosition===1}" (click)="next(-1)" class="button"></div>
+      <div [ngClass]="{'notDispaly': currentPosition===4}"(click)="next(1)" class="button"></div>
     </div>
 </div>

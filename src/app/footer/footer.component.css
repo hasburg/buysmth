@@ -8,11 +8,11 @@ a {
   justify-content: center;
   flex-direction: row;
   align-items: center;
+  margin-top: 30px;
 }
 
 .kontact .header {
   display: flex;
-  padding-top: 129px;
   margin: 0;
   text-align: center;
   font-family: Neucha;
@@ -21,6 +21,7 @@ a {
   font-size: 60px;
   line-height: 66px;
   color: #060606;
+  margin-top: 30px;
 }
 
 .mainInform {

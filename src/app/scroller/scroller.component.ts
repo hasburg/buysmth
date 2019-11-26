@@ -4,20 +4,20 @@ import { ru } from '../../environments/lang/ru.js';
 import { ua } from '../../environments/lang/ua.js';
 import { eng } from '../../environments/lang/eng.js';
 import { esp } from '../../environments/lang/esp.js';
+import { PositionService } from '../position.service';
 @Component({
   selector: 'app-scroller',
   templateUrl: './scroller.component.html',
   styleUrls: ['./scroller.component.css']
 })
 export class ScrollerComponent implements OnInit {
-  @ViewChild('position', { static: true }) phone;
-
+  positionService;
+  currentPosition;
   source;
   pos;
-  constructor( lang : LangService) {
+  constructor(lang: LangService,
+    position: PositionService) {
     lang.lang.subscribe(res => {
-      console.log(res);
-
       switch (res) {
         case 'ru':
           this.source = ru;
@@ -34,11 +34,13 @@ export class ScrollerComponent implements OnInit {
         default:
           break;
       }
+      this.positionService = position;
+      position.position.subscribe(res => {
+        this.currentPosition = res;
+      });
     });
   }
-
-  ngOnInit() {
-    this.pos = this.phone.position;
+  next(i) {
+    this.positionService.updatePosition(i);
   }
-
 }

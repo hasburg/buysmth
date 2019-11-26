@@ -1,19 +1,19 @@
 <div class="container">
   <div class="backgroudImageLeft">
     <img src="../../assets//left_backgroun.svg" alt="">
-    <app-phone #position></app-phone>
+    <app-phone ></app-phone>
   </div>
   <div class="rightBackgound">
     <div class="dots">
-      <span [ngClass]="{'picked': position.position===1}" class="dot"></span>
-      <span [ngClass]="{'picked': position.position===2}" class="dot"></span>
-      <span [ngClass]="{'picked': position.position===3}" class="dot"></span>
-      <span [ngClass]="{'picked': position.position===4}" class="dot"></span>
+      <span (click)="next(1)" [ngClass]="{'picked': currentPosition===1}" class="dot"></span>
+      <span (click)="next(2)" [ngClass]="{'picked': currentPosition===2}" class="dot"></span>
+      <span (click)="next(3)" [ngClass]="{'picked': currentPosition===3}" class="dot"></span>
+      <span (click)="next(4)" [ngClass]="{'picked': currentPosition===4}" class="dot"></span>
     </div>
 
     <div class="aboutUsText">
       <p class="textDescription">
-        {{source.about[position.position - 1].about}}
+        {{source.about[currentPosition - 1].about}}
       </p>
     </div>
   </div>

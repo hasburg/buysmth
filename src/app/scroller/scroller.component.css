@@ -1,53 +1,54 @@
-
-
 .aboutUsText {
-    background-image: url("../../assets/buble.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    z-index: 1000;
-    height: 50%;
-    display: flex;
-    background-position: 4%
-
+  background-image: url("../../assets/buble.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 9000;
+  height: 400px !important;
+  display: flex;
+  background-position: 4%;
 }
 
 .textDescription {
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
-  line-height: 33px;
+  margin: 52px 0 0px 110px;
+  font-size: 16px;
+  display: none;
+  width: 200px;
   text-align: center;
   color: #232323;
-  padding-top: 8%;
-  padding-right: 46%;
-  padding-left: 8%;
   display: -webkit-box;
-  -webkit-line-clamp: 6;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  height: 69%;
 }
-.imagePhone{
-    padding-top: 3%;
+
+.imagePhone {
+  padding-top: 3%;
 }
-.backgroudImageRight{
+
+.backgroudImageRight {
   position: relative;
   left: 47%;
   top: 88%;
   z-index: 10;
 }
-.backgroudImageLeft{
+
+.backgroudImageLeft {
   display: flex;
+  width: 60%;
 }
-.rightBackgound{
+.backgroudImageLeft img{
+height: fit-content;
+}
+.rightBackgound {
   background-image: url("../../assets/right_backround.svg");
   background-repeat: no-repeat;
   background-size: contain;
   z-index: 800;
-  background-position-y: bottom;
+  width: 50%;
+  background-position-y: 200px;
 }
-.dot{
+
+.dot {
   height: 12px;
   width: 12px;
   margin-right: 17px;
@@ -55,13 +56,18 @@
   border-radius: 50%;
   display: inline-block;
   opacity: 0.4;
-}
-.picked{
-  opacity: 1;
-}
-.dots{
-  position: relative;
-  top: 53%;
-  right: -18%;
+  cursor: pointer;
+  transition: opacity 500ms ease;
 }
 
+.picked {
+  opacity: 1;
+  transition: opacity 500ms ease;
+}
+
+.dots {
+  position: relative;
+  top: 28rem;
+  width: fit-content;
+  left: 6rem;
+}
