@@ -1,6 +1,45 @@
-.phone{
-  background-image: url('../../assets/phone/background_phone.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 100%;
+.frameTitle {
+  font-family: Neucha;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  /* or 100% */
+
+  text-align: center;
+
+  color: #FFFFFF;
+}
+
+.frameDescription {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFFFF;
+  opacity: 0.84;
+}
+
+.frameContainer {
+  position: relative;
+  top: -150px;
+}
+
+.backgroundImg {
+  height: 487px;
+}
+
+.button {
+  width: 25%;
+}
+.notDispaly{
+  visibility: hidden;
+}
+.buttonContainer {
+  position: relative;
+  top: -25px;
+  display: flex;
+  justify-content: space-between;
 }
