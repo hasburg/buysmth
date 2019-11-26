@@ -10,7 +10,7 @@ import { PositionService } from '../position.service';
   templateUrl: './scroller.component.html',
   styleUrls: ['./scroller.component.css']
 })
-export class ScrollerComponent implements OnInit {
+export class ScrollerComponent{
   positionService;
   currentPosition;
   source;
