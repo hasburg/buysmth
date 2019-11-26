@@ -1,10 +1,34 @@
 export const eng = {
   title: "Smart and comfortable shopping!",
   about: [
-    "Now doing shopping is easier than ever before. Forget about sticky notes or sending messages with explanations of what to buy. From now on, making daily purchases and planning social events is getting much more pleasant. Use BuySmth and turn the routine into a new hobby!",
-    "Use BuySmth together! Due to real-time synchronization, you always know if you need to buy smth and if smb has already bought it. Now organizing a party or just on the way home, you can always buy what you need or don’t – if someone else has already bought.",
-    "Is milk running out? Are the last pair of socks torn? Did you find 5 kilos of rotten potatoes under the table? Refresh your storage and be always aware of what is in your refrigerator or wardrobe. You can not only make a shopping list but also know what you already have on it.",
-    "Draw up a lot of shopping lists. Manage multiple storages. Calculate the price and quantity of goods to buy. A simple and customizable interface will make all this easier for you and allow you to free up your time for other important things.Enjoy your shopping! ..."
+    {
+      about:
+        "Now doing shopping is easier than ever before. Forget about sticky notes or sending messages with explanations of what to buy. From now on, making daily purchases and planning social events is getting much more pleasant. Use BuySmth and turn the routine into a new hobby!",
+      title: "Doing shopping has got easier than ever before!",
+      description:
+        "Create shopping baskets and BuySmth will help you with everything: from planning to making purchases with friends."
+    },
+    {
+      about:
+        "Use BuySmth together! Due to real-time synchronization, you always know if you need to buy smth and if smb has already bought it. Now organizing a party or just on the way home, you can always buy what you need or don’t – if someone else has already bought.",
+      title: "Do not keep everything in mind – add it to the list.",
+      description:
+        "Plan your shopping. Draw up your budget. There will be no more unpleasant surprises at the checkout or forgotten-to-buy goods."
+    },
+    {
+      about:
+        "Is milk running out? Are the last pair of socks torn? Did you find 5 kilos of rotten potatoes under the table? Refresh your storage and be always aware of what is in your refrigerator or wardrobe. You can not only make a shopping list but also know what you already have on it.",
+      title: "Always be aware.",
+      description:
+        "Running out of milk or paper? Put them on the list right away so that you don’t forget to buy them:)"
+    },
+    {
+      about:
+        "Draw up a lot of shopping lists. Manage multiple storages. Calculate the price and quantity of goods to buy. A simple and customizable interface will make all this easier for you and allow you to free up your time for other important things.Enjoy your shopping! ...",
+      title: "Everything is simple and convenient.",
+      description:
+        "The completeness and customization of information will help you focus only on the important."
+    }
   ],
   FAQ: [
     {

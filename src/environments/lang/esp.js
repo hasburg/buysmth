@@ -1,10 +1,35 @@
 export const esp = {
   title: "¡Compras inteligentes y cómodas!",
   about: [
-    "Ahora hacer compras es más fácil que nunca. Olvídate de las notas adhesivas o el envío de mensajes con explicaciones de qué comprar. De ahora en adelante, hacer compras diarias y planificar eventos sociales se está volviendo mucho más agradable. ¡Usa BuySmth y convierte la rutina en un nuevo pasatiempo!",
-    "¡Use BuySmth juntos! Gracias a la sincronización en tiempo real, siempre sabrá lo que necesita comprar y quién ya ha lo comprado. Al planear una fiesta o volver a casa, siempre tomará lo que necesita y no comprará lo que otra persona ya ha comprado.",
-    "¿Se está acabando la leche? ¿Están rotos los últimos calcetines? ¿Encontraste 5 kilos de papas podridas debajo de la mesa? Actualice su almacenamiento y esté siempre al tanto de lo que hay en su refrigerador o armario. No solo puede hacer una lista de compras, sino también saber lo que ya tiene en ella.",
-    "Elabora muchas listas de compras. Gestiona almacenamientos múltiples. Calcula el precio y la cantidad de productos para comprar. Una interfaz simple y personalizable le facilitará todo esto y le permitirá liberar su tiempo para otras cosas importantes. ¡Disfruta tus compras! ..."
+    {
+      about:
+        "Ahora hacer compras es más fácil que nunca. Olvídate de las notas adhesivas o el envío de mensajes con explicaciones de qué comprar. De ahora en adelante, hacer compras diarias y planificar eventos sociales se está volviendo mucho más agradable. ¡Usa BuySmth y convierte la rutina en un nuevo pasatiempo!",
+      title: "Ir de compras ahora es muy agradable.",
+      about:
+        "Cree cestas de compras y BuySmth te lo ayudará con todo: desde la planificación hasta la realización de compras con amigos."
+    },
+    {
+      about:
+        "¡Use BuySmth juntos! Gracias a la sincronización en tiempo real, siempre sabrá lo que necesita comprar y quién ya ha lo comprado. Al planear una fiesta o volver a casa, siempre tomará lo que necesita y no comprará lo que otra persona ya ha comprado.",
+      title: "No tenga en cuenta todo, agréguelo a la lista..",
+      about:
+        "Planifica tus compras. Calcule su presupuesto. No más sorpresas o compras olvidadas."
+    },
+    {
+      about:
+        "¿Se está acabando la leche? ¿Están rotos los últimos calcetines? ¿Encontraste 5 kilos de papas podridas debajo de la mesa? Actualice su almacenamiento y esté siempre al tanto de lo que hay en su refrigerador o armario. No solo puede hacer una lista de compras, sino también saber lo que ya tiene en ella.",
+
+      title: "Siempre este al tanto.",
+      about:
+        "¿No hay leche o papel? Lista de inmediato. Ahora no lo olvidarás :)"
+    },
+    {
+      about:
+        "Elabora muchas listas de compras. Gestiona almacenamientos múltiples. Calcula el precio y la cantidad de productos para comprar. Una interfaz simple y personalizable le facilitará todo esto y le permitirá liberar su tiempo para otras cosas importantes. ¡Disfruta tus compras! ...",
+      title: "Todo es simple y conveniente.",
+      about:
+        "La integridad y la personalización de la información lo ayudarán a concentrarse solo en lo importante."
+    }
   ],
   FAQ: [
     {
