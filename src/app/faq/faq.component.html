@@ -10,18 +10,24 @@
   <div class="faqContainer">
     <div class="faqElement" *ngFor="let item of source">
 
-      <div class="column" >
+      <div class="column">
         <div class="more">
-          <img (click)="item.toogle= !item.toogle" *ngIf="item.toogle" class="faqImg" src="../../assets/plus.png" alt="show more">
-          <img (click)="item.toogle= !item.toogle" *ngIf="!item.toogle" class="faqImg" src="../../assets/minus.png" alt="show less">
+          <div (click)="item.toogle= !item.toogle" *ngIf="item.toogle">
+            <img  class="faqImg" src="../../assets/plus.png"
+              alt="show more">
+          </div>
+          <div (click)="item.toogle= !item.toogle" *ngIf="!item.toogle">
+            <img  class="faqImg" src="../../assets/minus.png"
+              alt="show less">
+
+          </div>
           <div class="faqTextParag">
             {{item.title}}
           </div>
         </div>
-        <br>
         <div class="section" [ngClass]="{'collapsed': item.toogle,'expand': !item.toogle}">
           <p>
-           {{item.description}}
+            {{item.description}}
           </p>
         </div>
 

@@ -2,6 +2,10 @@
   padding-top: 50px;
   display: flex;
   justify-content: space-around;
+  position: sticky;
+  top: 0px;
+  z-index: 10000;
+  background-color: rgba(0,0,0,0.15);
 }
 
 .headerText {
@@ -20,6 +24,7 @@
 .headerBlock {
   display: flex;
 }
+
 .dropdown {
   position: relative;
   display: inline-block;
@@ -30,7 +35,7 @@
   position: absolute;
   background-color: #ccc9be;
 
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   padding: 12px 16px;
   right: -16px;
   z-index: 1;
