@@ -89,13 +89,19 @@ footer {
   font-weight: normal;
   font-size: 19px;
   line-height: 30px;
+  display: flex;
+  justify-content: space-evenly;
 }
 .footerLink {
-  padding-left: 155px;
-
+  margin-right: 12%;
 }
 .footerLink2 {
-  padding-left: 356px;
-  padding-right: 167px;
 
+}
+.city{
+  font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 19px;
+line-height: 26px;
 }

@@ -61,5 +61,7 @@ export const esp = {
   ],
   contacts: "Contactos",
   email: "Correo electrónico: buysmthapp@gmail.com ",
-  privacy: "Política de Privacidad"
+  privacy: "Política de Privacidad",
+  city:"Ucrania ciudad Jarkov",
+  aboutApp:"Sobre la aplicación"
 };

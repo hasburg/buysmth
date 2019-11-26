@@ -1,7 +1,7 @@
 
 
 .aboutUsText {
-    background-image: url("../../assets/slider/buble.png");
+    background-image: url("../../assets/buble.svg");
     background-repeat: no-repeat;
     background-size: contain;
     z-index: 1000;
@@ -41,9 +41,27 @@
   display: flex;
 }
 .rightBackgound{
-  background-image: url("../../assets/right_backround.png");
+  background-image: url("../../assets/right_backround.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  z-index: 1000;
+  z-index: 800;
   background-position-y: bottom;
 }
+.dot{
+  height: 12px;
+  width: 12px;
+  margin-right: 17px;
+  background-color: #FF5D24;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.4;
+}
+.picked{
+  opacity: 1;
+}
+.dots{
+  position: relative;
+  top: 53%;
+  right: -18%;
+}
+

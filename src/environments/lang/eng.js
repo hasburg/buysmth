@@ -59,5 +59,7 @@ export const eng = {
   ],
   contacts: "Contacts",
   email: "Email: buysmthapp@gmail.com ",
-  privacy: "Privacy Policy"
+  privacy: "Privacy Policy",
+  city:"Ukraine city Kharkov",
+  aboutApp:" About App"
 };

@@ -57,5 +57,7 @@ export const ru = {
   ],
   contacts: "Контакты",
   email: "Елеткронный адрес: buysmthapp@gmail.com",
-  privacy: "Политика конфиденциальности"
+  privacy: "Политика конфиденциальности",
+  city:"г.Харьков",
+  aboutApp:"О приложении",
 };

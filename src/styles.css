@@ -1,6 +1,7 @@
-body{
-    margin: 0;
+body {
+  margin: 0;
 }
+
 .container {
   display: flex;
   justify-content: center;
@@ -15,22 +16,40 @@ body{
   line-height: 55px;
   margin-top: 135px;
 }
-html{
+
+html {
   background-color: #fffcf1;
 }
+
 .round1 {
   margin-top: 109px;
   margin-right: 33px;
   transform: rotate(171.1deg);
 }
+
 .round2 {
   margin-top: 128px;
   margin-left: 41px;
 }
+
 .kontact {
   display: flex;
   margin: auto;
   justify-content: center;
   flex-direction: row;
   align-items: center;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.mat-form-field-infix {
+  width: 50px !important;
 }

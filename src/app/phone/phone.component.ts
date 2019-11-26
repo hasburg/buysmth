@@ -13,10 +13,11 @@ import { esp } from '../../environments/lang/esp.js';
 export class PhoneComponent implements OnInit {
   @Output('position') position = 1;
 
-  lang = new LangService();
+  language;
   source;
-  constructor() {
-    this.lang.lang.subscribe(res => {
+  constructor(lang : LangService) {
+    this.language=lang;
+    lang.lang.subscribe(res => {
       switch (res) {
         case 'ru':
           this.source = ru;

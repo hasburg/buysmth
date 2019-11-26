@@ -8,9 +8,9 @@ export class LangService {
   private langSource = new BehaviorSubject<any>(this.getValueFromSession);
   public lang = this.langSource.asObservable();
   constructor() {
-    this.updateCurrentUser(this.getValueFromSession);
+    this.updateLanguage(this.getValueFromSession);
    }
-  private updateCurrentUser(lang) {
+  public updateLanguage(lang) {
     this.langSource.next(lang);
   }
 

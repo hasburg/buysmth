@@ -11,11 +11,13 @@ import { esp } from '../../environments/lang/esp.js';
 })
 export class ScrollerComponent implements OnInit {
   @ViewChild('position', { static: true }) phone;
-  lang = new LangService();
+
   source;
   pos;
-  constructor() {
-    this.lang.lang.subscribe(res => {
+  constructor( lang : LangService) {
+    lang.lang.subscribe(res => {
+      console.log(res);
+
       switch (res) {
         case 'ru':
           this.source = ru;

@@ -1,9 +1,9 @@
 <div class="body">
-  <div class="header">
+  <div class="header" #header [ngClass]="{'shadow':offset>20}">
     <div class="headerBlock">
       <a (click)="scrollToComponent(aboutUS)" class="headerText">
         <div>
-          About us
+          {{source.aboutApp}}
         </div>
       </a>
       <a class="headerText" (click)="scrollToComponent(faq)">
@@ -13,8 +13,8 @@
       </a>
     </div>
 
-    <a href="#">
-      <img src="../assets//logo.png">
+    <a class="logo" href="#">
+      <img src="../assets//logo.svg">
     </a>
     <div class="headerBlock">
       <a class="headerText" (click)="scrollToComponent(footer)">
@@ -22,17 +22,39 @@
           {{source.contacts}}
         </div>
       </a>
-      <a class="headerText">
-        <div class="dropdown">
-          <span>ENG</span>
-          <div class="dropdown-content">
-            <p>ENG</p>
-            <p>RU</p>
-            <p>UA</p>
-            <p>ESP</p>
+
+
+          <div class="tes">
+              <img src="../assets/lang/{{currentLang}}.png" class="langFlag" alt="English">
+              <mat-form-field>
+                  <mat-select [(value)]="currentLang">
+                    <mat-option value="eng">
+                      <div (click)="changeLang('eng')" class="flagContainer">
+                        <img src="../assets/lang/eng.png" class="langFlag" alt="English">
+                        <span>ENG</span>
+                      </div>
+                    </mat-option>
+                    <mat-option value="esp">
+                      <div (click)="changeLang('esp')" class="flagContainer">
+                        <img src="../assets/lang/esp.png" class="langFlag" alt="Espaniol">
+                        <span>ESP</span>
+                      </div>
+                    </mat-option>
+                    <mat-option value="ua">
+                      <div (click)="changeLang('ua')" class="flagContainer">
+                        <img src="../assets/lang/ua.png" class="langFlag" alt="Ukraine">
+                        <span>UA</span>
+                      </div>
+                    </mat-option>
+                    <mat-option value="ru">
+                      <div (click)="changeLang('ru')" class="flagContainer">
+                        <img src="../assets/lang/ru.png" class="langFlag" alt="Russian">
+                        <span>RU</span>
+                      </div>
+                    </mat-option>
+                  </mat-select>
+                </mat-form-field>
           </div>
-        </div>
-      </a>
     </div>
   </div>
   <div>

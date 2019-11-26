@@ -35,5 +35,7 @@ export const ua = {
   ],
   contacts: "Контакти",
   email: "Електронна скринька: buysmthapp@gmail.com",
-  privacy: "Політика конфіденційності"
+  privacy: "Політика конфіденційності",
+  city: "м.Харків",
+  aboutApp:"Про додаток",
 };
