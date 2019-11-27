@@ -94,10 +94,13 @@ footer {
   justify-content: space-evenly;
 }
 .footerLink {
-  margin-right: 12%;
+  float: left;
 }
 .footerLink2 {
-
+  float: right;
+}
+.center-text{
+width: 100%;
 }
 .city{
   font-family: Open Sans;
@@ -105,4 +108,10 @@ font-style: normal;
 font-weight: normal;
 font-size: 19px;
 line-height: 26px;
+}
+.center-text{
+  margin-bottom: 30px;
+}
+.frameContainer{
+  height: 160px;
 }

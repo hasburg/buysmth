@@ -45,7 +45,15 @@ export class AppComponent {
 
   }
   scrollToComponent(element) {
+    console.log(48, element);
+    let pos = element.style.position;
+    let top = element.style.top;
+    element.style.position = 'relative';
+    element.style.top = '-150px';
     element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    element.style.top = top;
+    element.style.position = pos;
+    // window.scrollBy(0, -40);
   }
   changeLang(lang) {
     this.language.updateLanguage(lang);

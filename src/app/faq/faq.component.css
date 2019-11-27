@@ -22,6 +22,7 @@
 
 .faqTextParag {
   display: flex;
+  margin-top: 5px;
   font-family: "Open Sans", "Adobe Blank";
   font-weight: 700;
   font-size: 19px;

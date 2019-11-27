@@ -82,15 +82,33 @@
   display: none;
 }
 
+.mat-form-field-wrapper{
+  padding-bottom: 0px !important;
+}
+.mat-form-field-flex{
+  margin-top: 25px;
+}
+
 .tes img {
+  margin-top: 7px;
   margin-right: 10px;
 }
 
 .logo {
   display: flex;
 }
-
+.dropFlagUA{
+  position: relative;
+  top: 4px
+}
+.dropFlagRU{
+  position: relative;
+  top: 3px
+}
 .tes {
   display: flex;
   align-items: center
+}
+.center-text{
+  margin-bottom: 30px;
 }

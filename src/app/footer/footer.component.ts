@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, AfterViewInit } from '@angular/core';
 import { eng } from '../../environments/lang/eng.js';
 import { ru } from '../../environments/lang/ru.js';
 import { ua } from '../../environments/lang/ua.js';
@@ -10,6 +10,7 @@ import { LangService } from '../lang.service';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent implements OnInit {
+  @Input() aboutUS
   source = eng;
   constructor(lang: LangService) {
     lang.lang.subscribe(res => {
@@ -33,7 +34,19 @@ export class FooterComponent implements OnInit {
     });
   }
 
-  ngOnInit() {
+  scrollToComponent() {
+    let pos = this.aboutUS.style.position;
+    let top = this.aboutUS.style.top;
+    this.aboutUS.style.position = 'relative';
+    this.aboutUS.style.top = '-220px';
+    this.aboutUS.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    this.aboutUS.style.top = top;
+    this.aboutUS.style.position = pos;
   }
+
+  ngOnInit() {
+
+  }
+
 
 }

@@ -1,20 +1,34 @@
-<div (swipeleft)="next(1)"
-(swiperight)="next(-1)" >
-<div class="phone">
-    <img class="backgroundImg" src="../../assets/frama_{{currentPosition}}.svg" alt="">
-</div>
+<div (swipeleft)="next(1)" (swiperight)="next(-1)">
+  <div class="phone">
+    <div class="phone-container">
+      <div class="inside-container">
+        <img src="../../assets/accum.png" width="291" alt="">
+        <img src="../../assets/{{currentPosition}}_image.png" height="320" width="290" alt="">
+        <!-- <div class="phone-top-info"></div> -->
 
-  <div class="frameContainer">
-    <p *ngIf="source.about[currentPosition-1].title" class="frameTitle">
-      {{source.about[currentPosition-1].title}}
-    </p>
-    <p *ngIf="source.about[currentPosition-1].description" class="frameDescription">
-        {{source.about[currentPosition-1].description}}
-    </p>
+        <div class="center-placeholder">
+          <div class="frameContainer">
+            <p *ngIf="source.about[currentPosition-1].title" class="frameTitle">
+              {{source.about[currentPosition-1].title}}
+            </p>
+            <p *ngIf="source.about[currentPosition-1].description" class="frameDescription">
+              {{source.about[currentPosition-1].description}}
+            </p>
+          </div>
+
+          <div class="buttonContainer">
+            <div [ngClass]="{'notDispaly': currentPosition===1}" (click)="next(-1)" class="button button-left"></div>
+            <div [ngClass]="{'notDispaly': currentPosition===4}" (click)="next(1)" class="button button-right"></div>
+          </div>
+        </div>
+        <div class="button-background"></div>
+      </div>
+      <!-- <img class="backgroundImg" src="../../assets/phone.svg" alt=""> -->
+
+    </div>
+    <!-- <img class="backgroundImg" src="../../assets/frama_{{currentPosition}}.svg" alt=""> -->
 
   </div>
-  <div class="buttonContainer">
-      <div [ngClass]="{'notDispaly': currentPosition===1}" (click)="next(-1)" class="button"></div>
-      <div [ngClass]="{'notDispaly': currentPosition===4}"(click)="next(1)" class="button"></div>
-    </div>
+
+
 </div>

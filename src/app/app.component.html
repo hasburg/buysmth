@@ -24,37 +24,37 @@
       </a>
 
 
-          <div class="tes">
-              <img src="../assets/lang/{{currentLang}}.png" class="langFlag" alt="English">
-              <mat-form-field>
-                  <mat-select [(value)]="currentLang">
-                    <mat-option value="eng">
-                      <div (click)="changeLang('eng')" class="flagContainer">
-                        <img src="../assets/lang/eng.png" class="langFlag" alt="English">
-                        <span>ENG</span>
-                      </div>
-                    </mat-option>
-                    <mat-option value="esp">
-                      <div (click)="changeLang('esp')" class="flagContainer">
-                        <img src="../assets/lang/esp.png" class="langFlag" alt="Espaniol">
-                        <span>ESP</span>
-                      </div>
-                    </mat-option>
-                    <mat-option value="ua">
-                      <div (click)="changeLang('ua')" class="flagContainer">
-                        <img src="../assets/lang/ua.png" class="langFlag" alt="Ukraine">
-                        <span>UA</span>
-                      </div>
-                    </mat-option>
-                    <mat-option value="ru">
-                      <div (click)="changeLang('ru')" class="flagContainer">
-                        <img src="../assets/lang/ru.png" class="langFlag" alt="Russian">
-                        <span>RU</span>
-                      </div>
-                    </mat-option>
-                  </mat-select>
-                </mat-form-field>
-          </div>
+      <div class="tes">
+        <img src="../assets/lang/{{currentLang}}.png" class="langFlag" alt="English">
+        <mat-form-field>
+          <mat-select [(value)]="currentLang">
+            <mat-option value="eng">
+              <div (click)="changeLang('eng')" class="flagContainer">
+                <img src="../assets/lang/eng.png" class="langFlag dropFlag" alt="English">
+                <span>ENG</span>
+              </div>
+            </mat-option>
+            <mat-option value="esp">
+              <div (click)="changeLang('esp')" class="flagContainer">
+                <img src="../assets/lang/esp.png" class="langFlag dropFlag" alt="Espaniol">
+                <span>ESP</span>
+              </div>
+            </mat-option>
+            <mat-option value="ua">
+              <div (click)="changeLang('ua')" class="flagContainer">
+                <img src="../assets/lang/ua.png" class="langFlag dropFlagUA" alt="Ukraine">
+                <span>UA</span>
+              </div>
+            </mat-option>
+            <mat-option value="ru">
+              <div (click)="changeLang('ru')" class="flagContainer">
+                <img src="../assets/lang/ru.png" class="langFlag dropFlagRU" alt="Russian">
+                <span>RU</span>
+              </div>
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
     </div>
   </div>
   <div>
@@ -78,7 +78,7 @@
   </div>
 
   <div #footer>
-    <app-footer></app-footer>
+    <app-footer [aboutUS]="aboutUS"></app-footer>
   </div>
 
 </div>

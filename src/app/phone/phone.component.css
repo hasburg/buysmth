@@ -26,7 +26,8 @@
 
 .frameContainer {
   position: relative;
-  top: -225px;
+  bottom: -50px;
+  z-index: 10;
 }
 
 .backgroundImg {
@@ -47,8 +48,71 @@
 
 .buttonContainer {
   position: relative;
-  top: -250px;
+  width: 291px !important;
   display: flex;
   justify-content: space-between;
-  width: 100%;
+}
+.phone-container{
+  height: 670px;
+  background-image:  url("/assets/phone.svg");
+}
+.inside-container{
+  background: #fffcf1;
+  position: relative;
+  height: 593px;
+  top: 36px;
+  width: 290px;
+  left: 20px;
+  border-radius: 4px;
+}
+.phone-top-info{
+  height: 20px;
+  background-image:  url("/assets/accum.png");
+}
+.button-left{
+  width: 70px;
+  height: 65px;
+  margin-top: 10px;
+  background-image: url("/assets/left.svg");
+  background-size: cover;
+  background-position: 0% 20%;
+  background-size: cover;
+  z-index: 20;
+}
+.button-right{
+  width: 50px;
+  height: 75px;
+  z-index: 20;
+  background-image: url(/assets/right.svg);
+  background-position: 0% 20%;
+  background-size: cover;
+}
+.center-placeholder{
+  background-image: url('/assets/background-phone.png');
+  width: 291px;
+  margin-left: -1px;
+  height: 135px;
+  background-position: 0% 50%;
+  background-size: cover;
+  margin-top: 45px;
+}
+.buttonContainer{
+  margin-top: 0px;
+}
+.button-background{
+  height: 71px;
+    background: #4db872;
+    margin-top: -1px;
+}
+.frameTitle{
+  height: 25px;
+}
+.frameDescription{
+  height: 75px;
+}
+.phone{
+  width: 328px;
+}
+.frameContainer{
+  height: 130px
 }

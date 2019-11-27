@@ -15,9 +15,11 @@
   margin: 52px 0 0px 110px;
   font-size: 16px;
   display: none;
-  width: 200px;
+  width: 225px;
   text-align: center;
   color: #232323;
+  margin-top: auto;
+  margin-bottom: auto;
   display: -webkit-box;
 }
 
@@ -34,7 +36,8 @@
 
 .backgroudImageLeft {
   display: flex;
-  width: 60%;
+  justify-content: space-between;
+  margin-left: auto;
 }
 .backgroudImageLeft img{
 height: fit-content;
@@ -46,6 +49,7 @@ height: fit-content;
   z-index: 800;
   width: 50%;
   background-position-y: 200px;
+  height: 890px;
 }
 
 .dot {
@@ -69,5 +73,5 @@ height: fit-content;
   position: relative;
   top: 28rem;
   width: fit-content;
-  left: 6rem;
+  left: 11rem;
 }

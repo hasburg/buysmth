@@ -1,4 +1,3 @@
-
 <div class="kontact">
   <img src="./../../assets/images/Group_1.png" alt="" class="round1">
   <div class="header">{{source.contacts}}</div>
@@ -10,14 +9,15 @@
       <div class="contactInfo">{{source.contacts}} <br> {{source.email}}</div>
       <div class="imgBlock">
         <div class="comSoon">comming soon</div>
-        <a href="#">
-            <img src="./../../assets/images/app_store.png" alt="" class="appStr">
+        <a>
+          <img (click)="scrollToComponent()" src="./../../assets/images/app_store.png" alt="" class="appStr">
         </a>
       </div>
       <div class="img2">
 
-        <a href="#">
-            <img src="./../../assets/images/google-play-badge_1.png" alt="Google" class="imgGoogle">
+        <a>
+          <img (click)="scrollToComponent()" src="./../../assets/images/google-play-badge_1.png" alt="Google"
+            class="imgGoogle">
         </a>
 
       </div>
@@ -28,11 +28,11 @@
         <img src="./../../assets/images/Group_1.png" alt="" class="round3">
       </div>
     </div>
+    <footer>
+      <div class="center-text">
+        <a href="#" class="footerLink">BuySmth @2019</a>
+        <a href="#" class="footerLink2">{{source.privacy}}</a>
+      </div>
+    </footer>
   </div>
 </div>
-
-
-<footer>
-  <a href="#" class="footerLink">BuySmth @2019</a>
-  <a href="#" class="footerLink2">{{source.privacy}}</a>
-</footer>
